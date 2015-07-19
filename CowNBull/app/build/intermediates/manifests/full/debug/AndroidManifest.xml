@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ash.android.cowsbulls"
+    android:versionCode="2"
+    android:versionName="2" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_cb"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ash.android.cowsbulls.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowAnimationStyle="@android:style/Animation.Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ash.android.cowsbulls.InstructionActivity"
+            android:label="@string/Instructions"
+            android:parentActivityName="com.ash.android.cowsbulls.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowAnimationStyle="@android:style/Animation.Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ash.androiowsbulls.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.ash.android.cowsbulls.UserChoiceActivity"
+            android:label="@string/playermenu"
+            android:parentActivityName="com.ash.android.cowsbulls.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowAnimationStyle="@android:style/Animation.Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ash.androiowsbulls.HomeActivity" />
+        </activity>
+        <activity
+            android:name="com.ash.android.cowsbulls.OnePlayerGameActivity"
+            android:label="@string/NewGame"
+            android:parentActivityName="com.ash.android.cowsbulls.UserChoiceActivity"
+            android:screenOrientation="portrait"
+            android:windowAnimationStyle="@android:style/Animation.Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ash.androiowsbulls.UserChoiceActivity" />
+        </activity>
+        <activity
+            android:name="com.ash.android.cowsbulls.OnePlayerGameNewActivity"
+            android:label="@string/NewGame"
+            android:parentActivityName="com.ash.android.cowsbulls.UserChoiceActivity"
+            android:screenOrientation="portrait"
+            android:windowAnimationStyle="@android:style/Animation.Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ash.androiowsbulls.UserChoiceActivity" />
+        </activity>
+        <activity
+            android:name="com.ash.android.cowsbulls.ReplayGameActivity"
+            android:label="@string/restart"
+            android:parentActivityName="com.ash.android.cowsbulls.OnePlayerGameNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowAnimationStyle="@android:style/Animation.Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ash.androiowsbulls.OnePlayerGameNewActivity" />
+        </activity>
+    </application>
+
+</manifest>

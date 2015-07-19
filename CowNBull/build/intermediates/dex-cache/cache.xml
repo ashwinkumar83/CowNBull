@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Home_Projects\CowNBull\app\libs\commons-lang-2.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b0236b252e86419eef20c31a44579d2aee2f0a69">
+        <dex dex="F:\Home_Projects\CowNBull\app\build\intermediates\pre-dexed\debug\commons-lang-2.5-ed144ec8a9e77d109b556e40a88a5e8050cf9d34.jar" />
+    </item>
+    <item
+        jar="F:\Home_Projects\Android_SDK\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="F:\Home_Projects\CowNBull\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-139bd6a1bedcd538d2676ad0d4cfa3b4f3696d67.jar" />
+    </item>
+
+</items>

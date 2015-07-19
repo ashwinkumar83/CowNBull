@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_home_cb"
+    android:gravity="right"
+    android:onClick="playAction"
+    tools:context=".UserChoiceActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:text="Player Menu"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="140dp" >
+   
+
+
+    <RadioButton
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="45dp"
+        android:checked="true"
+        android:text="One Player" />
+
+    <RadioButton
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_below="@+id/radio0"
+        android:text="Two Players" />
+     </RadioGroup>
+  
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/radioGroup1"
+        android:onClick="playAction"
+        android:text="Play" />
+
+</RelativeLayout><!-- From: file:/F:/Home_Projects/CowNBull/app/src/main/res/layout/userchoice_activity.xml -->

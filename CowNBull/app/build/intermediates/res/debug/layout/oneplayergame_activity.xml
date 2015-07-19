@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+	 >
+	<EditText
+	android:id="@+id/myEditText"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:maxLines="1"
+	android:maxLength="4"
+	android:focusable="true"
+	android:focusableInTouchMode="true"
+	android:hint="Start guessing.."
+		android:onClick="guessAction"
+	/>
+	<Button
+            android:id="@+id/guessbttn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/guess"
+			android:onClick="guessAction"
+            android:theme="@style/ToDoTheme" />
+	<ListView
+	android:id="@+id/myListView"
+	android:scrollbars="vertical"
+	android:scrollbarStyle="outsideOverlay"
+	android:scrollbarAlwaysDrawVerticalTrack="false"
+	android:smoothScrollbar="true"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textSize="100sp"
+	/>
+</LinearLayout>
+<!-- From: file:/F:/Home_Projects/CowNBull/app/src/main/res/layout/oneplayergame_activity.xml -->

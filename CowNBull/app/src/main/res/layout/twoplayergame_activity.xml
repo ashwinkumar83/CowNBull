@@ -1,0 +1,43 @@
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAlignment="viewStart" 
+        android:theme="@android:style/Theme.Translucent" >
+        
+		<!-- <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:text="Play Word"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+		
+        <EditText
+		android:id="@+id/playWordText"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@android:color/white"
+		android:password="true"
+		android:maxLength="4"
+		android:hint="Type play word" 
+		android:maxLines="1"
+		/>    
+        <Button
+            android:id="@+id/okbttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"   
+            android:gravity="center_horizontal"       
+            android:text="@string/Ok"
+            android:theme="@style/ToDoTheme" />
+         <Button
+            android:id="@+id/cancelbttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"   
+            android:gravity="center_horizontal"       
+            android:text="@string/cancel"
+            android:theme="@style/ToDoTheme" />
+       
+    </LinearLayout>
